@@ -27,6 +27,17 @@ sudo ufw enable
 # Display status and information
 sudo ufw status verbosey
 
+# install java openjdk 17
+sudo apt install -y openjdk-17-jdk
+
+# install maven
+sudo apt install -y maven
+
+#config JAVA_HOME
+echo "export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> ~/.bashrc
+source ~/.bashrc
+
+
 # Display installed versions
 echo "Node.js version:"
 node --version
